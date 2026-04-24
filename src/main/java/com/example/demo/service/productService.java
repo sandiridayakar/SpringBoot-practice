@@ -20,7 +20,7 @@ public class productService {
     public com.example.demo.products getProductsbyId(int prodId) {
         return obj.stream()
                 .filter(p -> p.getId() == prodId)
-                .findFirst().get();
+                .findFirst().orElse(new products(500, "empty", 000));
     }
 
 }

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.model;
 
 
 
@@ -31,4 +31,5 @@ public class products {
     public void setPrice(int price) {
         this.price = price;
     }
+
 }
